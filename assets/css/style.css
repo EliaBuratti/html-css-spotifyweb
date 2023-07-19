@@ -21,7 +21,7 @@ h2 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -43,6 +43,14 @@ img {
 
 .no-style li {
     list-style-type: none;
+}
+
+.col-2 {
+    width: calc(100% /12 * 2);
+}
+
+.col-10 {
+    width: calc(100% /12 * 10);
 }
 
 .mx-1 {
@@ -90,6 +98,10 @@ img {
     padding:0 1rem
 }
 
+.py-1 {
+    padding: 1rem 0;
+}
+
 .py-2 {
     padding: 2rem 0;
 }
@@ -112,6 +124,9 @@ img {
     width: var(--w_sideb);
     height: calc(100vh - var(--h_footer));
 }
+
+
+/* da sistemare! */
 .banner {
     background-color: var(--bg_banner);
     position: sticky;
@@ -133,7 +148,7 @@ img {
     background-color: var(--bg-playlist);
 }
 
-.filter li, .filter p, .card p{
+.filter li, .filter p, .card p, .suggestion{
     color: var(--tx_color);
 }
 
@@ -151,13 +166,13 @@ img {
 }
 
 .card {
-    width: 13rem;
+    width: 100%;
     height: auto;
 }
 
 .title h3 {
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .subtitle {
@@ -165,6 +180,20 @@ img {
     padding: 0.5rem;
 }
 
+.suggestion {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.popular-artist img {
+    border-radius: 50%;
+
+}
+
+.albums [class^="col-"] {
+    padding: 1rem;
+}
 
 
 
@@ -253,17 +282,26 @@ img {
 
 /* large */
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
 
-
-    
+    .albums {
+        max-width: 1750px;
+    }
 }
 
 
 
 /* medium */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1439px) {
+
+    .col-m-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+
+    
+
     
 }
 
@@ -271,24 +309,28 @@ img {
 
 /* small */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
+
+    .col-s-6 {
+        width: calc(100% / 12 * 6 );
+    }
+
+
     
 }
 
 
 /* extra small */
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:670px) {
+
+
     .sidebar, .logo {
         width: 3rem;
     }
 
     .playlist {
        width: 100%;
-    }
-
-    .container {
-        width: auto;
     }
     .hidden {
         display: none;
@@ -306,7 +348,7 @@ img {
 
 
 @media screen and (max-height:240px) {
-    #site-header .upgrade{
+    .upgrade{
         display: none;
     }
     
