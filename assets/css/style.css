@@ -41,6 +41,10 @@ body {
     justify-content: center;
 }
 
+.just-between {
+    justify-content: space-between;
+}
+
 .overflow {
     overflow: auto;
 }
@@ -48,12 +52,25 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .gap-1 {
     gap: 1rem;
 }
+
+.p-1 {
+    padding: 1rem;
+}
+
+.px-1 {
+    padding:0 1rem
+}
+
+
 
 /* header section */
 
@@ -101,14 +118,18 @@ body {
 
 
 
+
+
 /* end main section */
 
 
-/* footer sectiion */
+/* footer section */
 
 #site-footer {
     width: 100%;
     height: var(--h_footer);
+    position: fixed;
+    z-index: 999;
 }
 
 
@@ -124,6 +145,10 @@ body {
 
 .debug .sidebar {
     background-color: rgb(95, 93, 93);
+}
+
+.debug .menu {
+    background-color: white;
 }
 
 .debug .banner {
@@ -148,7 +173,76 @@ body {
     background-color: purple;
 }
 
-.debug .row {
+.debug #site-main .row {
     background-color: green;
 }
+
+.debug .song, .debug .player, .debug .function {
+    background-color: yellow;
+    width: 8rem;
+    height: 4rem;
+}
+
+.debug .upgrade {
+    background-color: blue;
+    height: 4rem;
+    width: 6rem;
+    margin: 0.5rem 0;
+}
+
+.debug .add-playlist {
+    background-color: aqua;
+    width: 13rem;
+    height: 3rem;
+}
 /* responsive */
+
+
+/* large */
+
+@media screen and (max-width:1440px) {
+    
+}
+
+
+
+/* medium */
+
+@media screen and (max-width:1024px){
+    
+}
+
+
+
+/* small */
+
+@media screen and (max-width:768px) {
+    
+}
+
+
+/* extra small */
+
+@media screen and (max-width:425px) {
+    .sidebar, .logo {
+        width: 3rem;
+    }
+
+    .playlist {
+        width: calc(100vw - 3rem) ;
+    }
+    .hidden {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-height:240px) {
+    #site-header .upgrade{
+        display: none;
+    }
+    
+}
+
+
