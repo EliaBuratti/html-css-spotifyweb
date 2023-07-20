@@ -37,6 +37,7 @@ img {
     --tx_color:rgb(114 116 121);
     --dark: black;
     --bg_footer: rgb(40 40 40);
+    --color_light: #c1c1c1;
 }
 
 .d-flex {
@@ -337,10 +338,10 @@ img {
 }
 
 
-.time-bar {
+.time-bar{
     width: 100%;
     height: 5px;
-    background-color: green;
+    background-color: var(--tx_color);
     border-radius: 5px;
     position: relative;
 }
@@ -348,7 +349,7 @@ img {
 .progressive {
     width: 20%;
     height: 5px;
-    background-color: red;
+    background-color: var(--color_light);
     border-radius: 5px;
     position: absolute;
 }
@@ -374,8 +375,31 @@ img {
     padding: 0.5rem 0;
 }
 
-.real_time {
+.real_time p {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
 
+.function a {
+    padding: 0 0.5rem;
+}
+
+.function {
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.volume-bar{
+    width: 50%;
+    height: 5px;
+    background-color: var(--tx_color);
+    border-radius: 5px;
+    position: relative;
 }
 /* end footer section */
 
