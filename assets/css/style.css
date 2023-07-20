@@ -237,6 +237,16 @@ img {
 
 }
 
+.head_menu {
+    height: 100%;
+    min-height: 37rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
 .menu i {
     padding: 1rem;
 }
@@ -299,6 +309,7 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 0;
 }
 
 
@@ -339,7 +350,7 @@ img {
 
 
 .time-bar{
-    width: 100%;
+    width: 80%;
     height: 5px;
     background-color: var(--tx_color);
     border-radius: 5px;
@@ -395,7 +406,7 @@ img {
 }
 
 .volume-bar{
-    width: 50%;
+    width: 30%;
     height: 5px;
     background-color: var(--tx_color);
     border-radius: 5px;
@@ -487,6 +498,9 @@ img {
     .col-m-3 {
         width: calc(100% / 12 * 3);
     }
+    .save-m {
+        display: block;
+    }
 
 
     
@@ -545,6 +559,17 @@ img {
     .px-s {
         padding: 0 0.5rem;
     }
+
+    .real-time-s {
+        width: 75%;
+        margin: auto;
+    }
+
+    .song_name-s {
+        padding-right: 5%;
+    }
+
+
 
 
 
