@@ -103,6 +103,7 @@ img {
     padding:0 1rem
 }
 
+
 .py-1 {
     padding: 1rem 0;
 }
@@ -138,7 +139,8 @@ img {
 }
 
 .logo img {
-    width: 100%;
+    font-size: 5rem;
+    padding: 2rem 4rem 1rem 1rem
 }
 
 /* da sistemare! */
@@ -214,7 +216,7 @@ img {
     padding: 1rem;
 }
 
-.menu, .menu i {
+.menu, .menu i, .favourite-playlist {
     color: var(--white);
     font-size: 1rem;
 
@@ -233,6 +235,23 @@ img {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+.list, .add-playlist, .add-playlist a, .menu{
+    color: var(--tx_color);
+}
+
+.menu a {
+    width: 1.5rem;
+    fill: var(--tx_color);
+}
+
+.list {
+    line-height: 2rem;
+}
+
+.visible-s {
+    display: none;
 }
 
 
@@ -356,6 +375,7 @@ img {
     }
 
 
+
     
 }
 
@@ -379,6 +399,24 @@ img {
     .sidebar {
         width: 3rem;
     }
+
+    .visible-s {
+        display: block;
+    }
+
+    .logo-s img {
+        padding: 0.5rem;
+    }
+
+    .menu-s a {
+        width: 1.5rem;
+    }
+
+    .px-s {
+        padding: 0 0.5rem;
+    }
+
+
 
 }
 
