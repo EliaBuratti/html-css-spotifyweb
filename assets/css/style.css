@@ -136,6 +136,7 @@ img {
     width: var(--w_sideb);
     height: calc(100vh - var(--h_footer));
     background-color: var(--dark);
+    position: relative;
 }
 
 .logo img {
@@ -237,7 +238,7 @@ img {
     align-items: center;
 }
 
-.list, .add-playlist, .add-playlist a, .menu{
+.list, .add-playlist, .add-playlist a, .menu, .profile{
     color: var(--tx_color);
 }
 
@@ -252,6 +253,38 @@ img {
 
 .visible-s {
     display: none;
+}
+
+.install a {
+    width: 1.5rem;
+    fill: var(--tx_color);
+    padding-top: 5px;
+}
+
+.install {
+    border-bottom: 2px solid var(--tx_color);
+    align-items: center;
+}
+
+.user a {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--tx_color);
+    background-image: url(../img/profile.svg);
+    background-repeat: no-repeat;
+}
+
+.user {
+    color: white;
+    align-items: center;
+}
+.profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 
