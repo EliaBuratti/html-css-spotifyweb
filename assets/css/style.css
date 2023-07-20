@@ -36,6 +36,7 @@ img {
     --bg-playlist:rgb(20 25 34);
     --tx_color:rgb(114 116 121);
     --dark: black;
+    --bg_footer: rgb(40 40 40);
 }
 
 .d-flex {
@@ -50,6 +51,14 @@ img {
     width: calc(100% /12 * 2);
 }
 
+.col-3 {
+    width: calc(100% /12 * 3);
+}
+
+.col-6 {
+    width: 50%;
+}
+
 .col-10 {
     width: calc(100% /12 * 10);
 }
@@ -60,6 +69,10 @@ img {
 
 .tx-center {
     text-align: center;
+}
+
+.al-center {
+    align-items: center;
 }
 
 .just-center {
@@ -300,10 +313,70 @@ img {
 #site-footer {
     width: 100vw;
     height: var(--h_footer);
+    background-color: var(--bg_footer);
+}
 
+.song img {
+    width: 2.5rem;
+    min-width: 2.5rem;
+    aspect-ratio: 1/1;
+}
+
+.bot {
+    height: 5rem;
+    align-items: center;
+}
+
+.save a {
+    color: var(--tx_color);
+    padding: 0.5rem;
+}
+
+.controls a, .function a {
+    color: var(--white);
 }
 
 
+.time-bar {
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progressive {
+    width: 20%;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.song_name h6 {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+.song_name p {
+    font-size: 0.7rem;
+    color: var(--tx_color);
+}
+
+.song_name {
+    padding-left: 2%;
+    padding-right: 20%;
+}
+
+.player {
+    max-width: 60%;
+    margin: auto;
+    padding: 0.5rem 0;
+}
+
+.real_time {
+
+}
 /* end footer section */
 
 
