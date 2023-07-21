@@ -589,3 +589,13 @@ hr {
 }
 
 
+/* footer */
+
+.song_name p:hover {
+    text-decoration: underline;
+}
+
+.save a:hover {
+    color: var(--white);
+}
+
