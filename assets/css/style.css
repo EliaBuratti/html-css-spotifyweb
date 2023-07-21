@@ -549,4 +549,16 @@ img {
     opacity: 0.5;
 }
 
+/* upgrade */
+
+.upgrade {
+    transition: all 0.3s;
+}
+
+.upgrade:hover {
+    transform: scale(1.1);
+}
+
+
+
 
