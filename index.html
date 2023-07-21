@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bonus.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +25,6 @@
 
         <div class="container d-flex">
 
-            <!-- da finire bene, appaiono le scrollbar -->
 
             <div class="sidebar d-flex just-between overflow-hd">
 
@@ -416,7 +417,6 @@
         <div class="row bot just-between">
 
             <!-- song on play -->
-
                     <div class="col-3 d-flex">
 
                             <div class="song">
@@ -445,18 +445,19 @@
                     </div>
 
             <!-- controls -->
-                    <div class="col-6 controls">
-                        <div class="player d-flex just-evenly al-center">
+                    <div class="col-6 controls wrap">
+                        <div class=" player d-flex just-evenly al-center">
+
                             <a href="#">
                                 <i class="fa-solid fa-shuffle fa-lg"></i>
                             </a>
-                            <a href="#">
+                            <a href="#" class="back">
                                 <i class="fa-solid fa-backward-step fa-lg"></i>
                             </a>
                             <a href="#">
                                 <i class="fa-regular fa-circle-play fa-2x"></i>
                             </a>
-                            <a href="#">
+                            <a href="#" class="forw">
                                 <i class="fa-solid fa-forward-step fa-lg"></i>
                             </a>
                             <a href="#">
@@ -464,8 +465,8 @@
                             </a>
         
                         </div>
-
-                        <div class="real_time real-time-s d-flex al-center just-center">
+                        
+                        <div class=" real_time real-time-s d-flex al-center just-center">
                             <p>
                                 0:23
                             </p>
@@ -487,6 +488,8 @@
                         </div>
     
                     </div>
+
+            <!-- function -->
     
                     <div class="col-3 d-flex just-end">
                         <div class="function d-flex">

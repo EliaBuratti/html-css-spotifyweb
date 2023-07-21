@@ -68,6 +68,10 @@ hr {
     width: calc(100% /12 * 10);
 }
 
+.col-12 {
+    width: 100%;
+}
+
 .mx-1 {
     margin: 0 1rem;
 }
@@ -156,7 +160,7 @@ hr {
 }
 
 .sidebar {
-    width: var(--w_sideb);
+    min-width: var(--w_sideb);
     height: calc(100vh - var(--h_footer));
     background-color: var(--dark);
     flex-direction: column;
@@ -170,7 +174,7 @@ hr {
 /* da sistemare! */
 .banner {
     background-color: var(--bg_banner);
-    position: sticky;
+    position: relative;
     top:0;
     left: 0;
     height: 5rem;
@@ -218,6 +222,7 @@ hr {
 
 .cover {
     position: relative;
+    margin-bottom: -5px;
 }
 
 .play {
@@ -414,7 +419,7 @@ hr {
 }
 
 .player {
-    max-width: 60%;
+    max-width: 40%;
     margin: auto;
     padding: 0.5rem 0;
 }
@@ -498,7 +503,7 @@ hr {
 
 
     .sidebar {
-        width: 3rem;
+        min-width: 3rem;
     }
 
     .playlist {
