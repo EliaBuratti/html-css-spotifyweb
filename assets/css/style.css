@@ -143,6 +143,7 @@ img {
 
 
 
+
 /* main section */
 
 .container {
@@ -209,6 +210,25 @@ img {
     width: 100%;
     height: auto;
 }
+
+.cover {
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    display: none;
+}
+
+.cover img {
+    position: relative;
+}
+
+
 
 .title h3 {
     color: var(--white);
@@ -519,5 +539,14 @@ img {
 /* hover effects */
 
 
+/* play button */
+
+.cover:hover .play {
+    display: block;
+}
+
+.cover:hover img {
+    opacity: 0.5;
+}
 
 
