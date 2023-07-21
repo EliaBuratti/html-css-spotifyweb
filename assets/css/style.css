@@ -24,6 +24,10 @@ img {
     max-width: 100%;
 }
 
+hr {
+    border-bottom: 2px solid var(--tx_color);
+}
+
 
 
 /* utilities */
@@ -256,10 +260,13 @@ img {
     padding: 1rem;
 }
 
-.menu, .menu i, .favourite-playlist {
+.menu, .menu i, .favourite-playlist, .add-playlist a {
     color: var(--white);
     font-size: 1rem;
+}
 
+.home, .search, .library, .add-playlist, .list li, .install {
+    opacity: 0.6;
 }
 
 
@@ -278,13 +285,13 @@ img {
     align-items: center;
 }
 
-.list, .add-playlist, .add-playlist a, .menu, .profile{
-    color: var(--tx_color);
+ .profile{
+    color: var(--white)
 }
 
 .menu a {
     width: 1.5rem;
-    fill: var(--tx_color);
+    margin: 0.2rem 0.5rem;
 }
 
 .list {
@@ -303,7 +310,6 @@ img {
 }
 
 .install {
-    border-bottom: 2px solid var(--tx_color);
     align-items: center;
 }
 
@@ -569,6 +575,17 @@ img {
 .mx-1 li:hover {
     border-bottom: 3px solid green;
     color: white;
+}
+
+
+/* sidebar */
+
+.home:hover, .search:hover, .library:hover {
+    opacity: 1;
+    border-left: 3px solid green;
+}
+.add-playlist:hover, .list li:hover, .install:hover {
+    opacity: 1;
 }
 
 
